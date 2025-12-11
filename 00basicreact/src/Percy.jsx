@@ -1,6 +1,6 @@
 function Percy(){
     return(
-        <h2> react</h2>
+        <h2> Robot Machine App Using React</h2>
     )
 }
 

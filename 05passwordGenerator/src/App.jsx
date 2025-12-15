@@ -7,6 +7,7 @@ function App() {
   const [charAllowed, setCharAllowed] = useState(false);
   const [password, setPassword] = useState("");
 
+  // useRef Hook
   const passwordRef = useRef(null);
 
   const passwordGenerator = useCallback(() => {

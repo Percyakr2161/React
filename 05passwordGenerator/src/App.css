@@ -1,42 +1,75 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+/* Page center */
+.page {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;     /* vertical center */
+  justify-content: center; /* horizontal center */
+  background-color: #0f172a;
+}
+
+/* Card */
+.password-card {
+  width: 100%;
+  max-width: 380px;
+  padding: 16px 20px;
+  background-color: #1f2937;
+  color: #f97316;
+  border-radius: 14px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
+}
+
+/* Title */
+.title {
   text-align: center;
+  color: white;
+  margin-bottom: 14px;
+  font-size: 22px;
+  font-weight: 600;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* Input + button */
+.password-box {
+  display: flex;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: 16px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.password-input {
+  flex: 1;
+  padding: 8px 12px;
+  border: none;
+  outline: none;
+  font-size: 15px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.copy-btn {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 6px 16px;
+  cursor: pointer;
 }
 
-.card {
-  padding: 2em;
+.copy-btn:hover {
+  background-color: #1d4ed8;
 }
 
-.read-the-docs {
-  color: #888;
+/* Controls */
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  font-size: 14px;
+}
+
+.control-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+input[type="range"] {
+  cursor: pointer;
 }
